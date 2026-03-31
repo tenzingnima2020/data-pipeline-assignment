@@ -20,11 +20,11 @@ gold["btc_daily_return"] = gold["btc_close"].pct_change() * 100
 gold["positive_return"] = (gold["btc_daily_return"] > 0).astype(int)
 gold["is_weekend"] = pd.to_datetime(gold["date"]).dt.dayofweek >= 5
 
-# Drop first row (NaN return)
-gold = gold.dropna()
+#Filling Missing Daily Return with 0
+gold["btc_daily_return"] = gold["btc_daily_return"].fillna(0)
 
 # Save to gold
 os.makedirs("data/gold", exist_ok=True)
 gold.to_csv("data/gold/crypto_sentiment_daily.csv", index=False)
-print(f"✅ Saved data/gold/crypto_sentiment_daily.csv with {len(gold)} rows")
+print(f"Saved data/gold/crypto_sentiment_daily.csv with {len(gold)} rows")
 print(gold.head())

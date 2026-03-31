@@ -30,10 +30,9 @@ df["btc_low"] = df["low"].astype(float)
 silver = df[["date", "btc_close", "btc_volume", "btc_high", "btc_low"]]
 
 # Save to silver
-# Save to silver
 os.makedirs("data/silver", exist_ok=True)
 
 silver = silver.sort_values("date").reset_index(drop=True)
 
 silver.to_csv("data/silver/btc_daily_clean.csv", index=False)
-print(f"✅ Saved data/silver/btc_daily_clean.csv with {len(silver)} rows")
+print(f"Saved data/silver/btc_daily_clean.csv with {len(silver)} rows")

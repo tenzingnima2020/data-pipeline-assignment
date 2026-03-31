@@ -24,10 +24,9 @@ df["fear_greed_label"] = df["value_classification"]
 silver = df[["date", "fear_greed_value", "fear_greed_label"]]
 
 # Save to silver
-# Save to silver
 os.makedirs("data/silver", exist_ok=True)
 
 silver = silver.sort_values("date").reset_index(drop=True)
 
 silver.to_csv("data/silver/fear_greed_clean.csv", index=False)
-print(f"✅ Saved data/silver/fear_greed_clean.csv with {len(silver)} rows")
+print(f"Saved data/silver/fear_greed_clean.csv with {len(silver)} rows")
