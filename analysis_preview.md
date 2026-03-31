@@ -3,6 +3,7 @@
 ## 1. Statistical Question
 Is the mean daily BTC return different from 0?
 Do BTC returns differ on Fear days vs Greed days?
+Is the proportion of positive-return days higher on Greed days?
 
 ## 2. Outcome Variable
 `btc_daily_return` — the percentage change in BTC closing price day over day.
