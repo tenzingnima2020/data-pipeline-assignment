@@ -20,8 +20,8 @@ gold["btc_daily_return"] = gold["btc_close"].pct_change() * 100
 gold["positive_return"] = (gold["btc_daily_return"] > 0).astype(int)
 gold["is_weekend"] = pd.to_datetime(gold["date"]).dt.dayofweek >= 5
 
-#Filling Missing Daily Return with 0
-gold["btc_daily_return"] = gold["btc_daily_return"].fillna(0)
+#Deleting rows with missing values
+gold = gold.dropna()
 
 # Save to gold
 os.makedirs("data/gold", exist_ok=True)
