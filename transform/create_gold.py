@@ -24,7 +24,7 @@ gold["is_weekend"] = pd.to_datetime(gold["date"]).dt.dayofweek >= 5
 gold = gold.dropna()
 
 # Removing columns not needed for Part 2
-gold = gold.drop(columns=["btc_high", "btc_low", "is_weekend"])
+gold = gold.drop(columns=["btc_high", "btc_low"])
 
 # Save to gold
 os.makedirs("data/gold", exist_ok=True)
