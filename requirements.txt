@@ -1,4 +1,1 @@
-requests
-pandas
-duckdb
-python-dotenv
+streamlit
