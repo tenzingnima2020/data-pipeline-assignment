@@ -1,7 +1,6 @@
-# data-pipeline-assignment
-Data pipeline for crypto sentiment analysis
+# Bitcoin Market Sentiment & Trend Analysis — Part 1
 
-# Data Pipeline Assignment — Part 1
+Data pipeline for crypto sentiment analysis
 
 ## Overview
 This project builds a data pipeline that pulls crypto market data

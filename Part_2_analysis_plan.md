@@ -1,10 +1,10 @@
-# Assignment 4 Analysis Plan
+# Analysis Plan - Part 2
 
 ## Original Project
-In Assignment 3, I built a Gold dataset by combining Bitcoin daily market data from Binance with Fear & Greed sentiment data.
+In Part 1, I built a Gold dataset by combining Bitcoin daily market data from Binance with Fear & Greed sentiment data.
 
 ## New External Source
-For Assignment 4, I added Google Trends search interest data for the term "Bitcoin".
+For Part 2, I added Google Trends search interest data for the term "Bitcoin".
 
 ## Why This Source Matters
 Google Trends provides a measure of public attention. This helps explore whether higher interest in Bitcoin is associated with changes in returns, positive-return frequency, and trading volume.

@@ -1,4 +1,4 @@
-# Assignment 4 Reflection
+# Part 2 Reflection
 
 ## What worked well
 The strongest part of the project was extending the original Gold dataset with Google Trends data and using it to create more meaningful comparison groups.
